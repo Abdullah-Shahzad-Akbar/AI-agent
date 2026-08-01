@@ -174,5 +174,4 @@ def delete_all_user():
 # id=int(input("Enter your user id:"))
 # add_message(role,message,id)
 
-show_all_data()
 
