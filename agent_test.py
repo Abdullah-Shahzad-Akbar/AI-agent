@@ -52,7 +52,7 @@ async def agent(EMAIL:str,query:str,filename=""):
             return {"decision":""}
     def search(agentstate:state):
         if agentstate["decision"].lower() == "search":
-            search=TavilySearch(max_results=5,search_depth="basic")
+            search=TavilySearch(api_key=tavily_api_key,max_results=5,search_depth="basic")
             print("Search performed")
             raw_results=search.invoke(agentstate["query"])
             if isinstance(raw_results, dict):
@@ -153,6 +153,7 @@ async def agent(EMAIL:str,query:str,filename=""):
     app=graph.compile()
     load_dotenv()
     api_key=os.getenv("GROQ_API_KEY")
+    tavily_api_key=os.getenv("TAVILY_API_KEY")
     model_name=ChatGroq(model="openai/gpt-oss-120b",api_key=api_key,max_tokens=2048,verbose=False,streaming=True)
     user_id=int(get_user_id(EMAIL))
     try:
