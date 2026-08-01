@@ -216,3 +216,12 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+# Project-specific files
+files/
+text_of_pdf/
+chroma_db/
+chats.db
+
+# IDE
+.vscode/
+.idea/
