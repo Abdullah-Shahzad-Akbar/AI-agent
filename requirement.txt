@@ -2,6 +2,7 @@ langchain
 langchain-google-genai
 langchain-ollama
 langchain-groq
+langchain-tavily
 langgraph
 langchain-core
 typing
@@ -9,10 +10,10 @@ markdown
 chromadb
 pandas
 sqlite3
-time
 fastapi
 pydantic
 dotenv
-fitz
 pymupdf
 starlette
+frontend
+python-multipart
