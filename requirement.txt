@@ -16,4 +16,5 @@ dotenv
 pymupdf
 starlette
 frontend
+jinja2
 python-multipart
