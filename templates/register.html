@@ -1,66 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create Account</title>
     <link rel="stylesheet" href="/static/register.css">
 </head>
+
 <body>
-<div class="login-container">
+    <div class="login-container">
 
-    <h1>Create Account</h1>
-    <p class="subtitle">Join your Abdullah GPT</p>
-
-
-    {% if error %}
-    <div class="error-message">
-    {{ error }}
-    </div>
-    {% endif %}
+        <h1>Create Account</h1>
+        <p class="subtitle">Join your Abdullah GPT</p>
 
 
-    <form action="/register" method="POST">
+        {% if error %}
+        <div class="error-message">
+            {{ error }}
+        </div>
+        {% endif %}
 
-        <div class="input-group">
+
+        <form action="/register" method="POST">
             <label>Username</label>
-            <input
-                type="text"
-                name="username"
-                placeholder="Enter your username"
-                required
-            >
-        </div>
-
-        <div class="input-group">
+            <div class="input-group" id="username">
+                <input type="text" name="username" placeholder="Enter your username" required>
+            </div>
             <label>Email</label>
-            <input
-                type="email"
-                name="email"
-                placeholder="Enter your email"
-                required
-            >
-        </div>
-
-        <div class="input-group">
+            <div class="input-group" id="email">
+                <input type="email" name="email" placeholder="Enter your email" required>
+            </div>
             <label>Password</label>
-            <input
-                type="password"
-                name="password"
-                placeholder="Create a password"
-                required
-            >
+            <div class="input-group" id="password">
+                <div id="password-input">
+                    <input id="pass" type="password" name="password" placeholder="Create a password" required>
+                    <img id="img" src="static/close-eye.png">
+                </div>
+            </div>
+
+            <button type="submit">Create Account</button>
+
+        </form>
+
+        <div class="footer">
+            Already have an account?
+            <a href="/login">Login</a>
         </div>
 
-        <button type="submit">Create Account</button>
-
-    </form>
-
-    <div class="footer">
-        Already have an account?
-        <a href="/login">Login</a>
     </div>
-
-</div>
+    <script src="static/eye-animation.js"></script>
 </body>
 </html>
