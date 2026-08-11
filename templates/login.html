@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,38 +10,32 @@
 
 <body>
 
-<div class="login-container">
+    <div class="login-container">
 
-    <div class="logo">
-        Abdullah GPT Login
+        <div class="logo">
+            Abdullah GPT Login
+        </div>
+
+        <form action="/login" method="post">
+            <div id="email">
+                <input type="email" name="email" placeholder="Email Address" required>
+            </div>
+            <div id="password">
+                <input id="pass" type="password" name="password" placeholder="Password" required>
+                <img id="img" src="static/open-eye.png">
+            </div>
+
+            <button type="submit">
+                Login
+            </button>
+        </form>
+        <div class="footer">
+            Do not have an account?
+            <a href="/register">Create account</a>
+        </div>
+
     </div>
-
-    <form action="/login" method="post">
-
-        <input
-            type="email"
-            name="email"
-            placeholder="Email Address"
-            required
-        >
-
-        <input
-            type="password"
-            name="password"
-            placeholder="Password"
-            required
-        >
-
-        <button type="submit">
-            Login
-        </button>
-    </form>
-    <div class="footer">
-        Do not have an account?
-        <a href="/register">Create account</a>
-    </div>
-
-</div>
-
+    <script src="static/login.js"></script>
 </body>
+
 </html>
