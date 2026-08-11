@@ -36,24 +36,60 @@ form{
     gap:18px;
 }
 
-input{
+#email{
     background:#374151;
-    color:white;
     border:none;
     outline:none;
-    padding:15px 18px;
+    padding:9px 15px;
     border-radius:30px;
     font-size:16px;
+    display: flex;
+    align-items: center;
 }
-
-input::placeholder{
-    color:#cbd5e1;
-}
-
-input:focus{
+#email:focus-within{
     border:2px solid #2563eb;
 }
-
+#email input{
+    color: white;
+    background:#374151;
+    width: 100%;
+    max-width: 500px;
+    padding: 10px 0;
+    border: 0;
+    outline: 0;
+    font-size: 16px;
+}
+#password{
+    background:#374151;
+    border:none;
+    outline:none;
+    padding:9px 15px;
+    border-radius:30px;
+    font-size:16px;
+    display: flex;
+    align-items: center;
+}
+#password:focus-within{
+    border:2px solid #2563eb;
+}
+#password input{
+    color: white;
+    background:#374151;
+    width: 100%;
+    max-width: 500px;
+    padding: 10px 0;
+    border: 0;
+    outline: 0;
+    font-size: 16px;
+}
+#img{
+    width: 25px;
+    cursor: pointer;
+}
+input::placeholder{
+    color: white;
+    
+}
 button{
     background:#2563eb;
     color:white;
