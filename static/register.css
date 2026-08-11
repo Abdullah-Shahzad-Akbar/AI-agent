@@ -131,3 +131,9 @@ button:hover{
     margin-bottom:20px;
     text-align:center;
 }
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0 1000px #374151 inset;
+    -webkit-text-fill-color: white;
+}
