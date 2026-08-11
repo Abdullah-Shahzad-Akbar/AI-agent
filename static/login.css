@@ -37,6 +37,7 @@ form{
 }
 
 #email{
+    color: white;
     background:#374151;
     border:none;
     outline:none;
@@ -61,6 +62,7 @@ form{
     font-size: 16px;
 }
 #password{
+    color: white;
     background:#374151;
     border:none;
     outline:none;
