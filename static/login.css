@@ -45,6 +45,7 @@ form{
     font-size:16px;
     display: flex;
     align-items: center;
+    transition: .2s;
 }
 #email:focus-within{
     border:2px solid #2563eb;
@@ -68,6 +69,7 @@ form{
     font-size:16px;
     display: flex;
     align-items: center;
+    transition: .2s;
 }
 #password:focus-within{
     border:2px solid #2563eb;
