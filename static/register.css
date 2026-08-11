@@ -38,15 +38,6 @@ h1{
     display:flex;
     flex-direction:column;
     margin-bottom:18px;
-}
-
-label{
-    color:#d1d5db;
-    margin-bottom:8px;
-    font-size:14px;
-}
-
-input{
     padding:14px;
     border:none;
     outline:none;
@@ -56,14 +47,36 @@ input{
     font-size:15px;
     transition:.2s;
 }
+.input-group:focus-within{
+    border:2px solid #2563eb;
+}
 
+label{
+    color:#d1d5db;
+    margin-bottom:8px;
+    padding:8px;
+    font-size:14px;
+}
+
+#password-input{
+    display: flex;
+}
+input{
+    background: #374151;
+    color: white;
+    width: 100%;
+    max-width: 500px;
+    outline: 0;
+    border: 0;
+}
+img{
+    width: 18px;
+    cursor: pointer;
+}
 input::placeholder{
     color:#9ca3af;
 }
 
-input:focus{
-    border:2px solid #2563eb;
-}
 
 button{
     width:100%;
