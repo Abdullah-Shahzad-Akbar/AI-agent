@@ -62,7 +62,7 @@ Run the following command:
 ```bash
 uvicorn main:app --host 0.0.0.0 --port 8000
 ```
-or
+If the above command don't work then:
 ```bash
 python -m uvicorn main:app --host 0.0.0.0 --port 8000
 ```
