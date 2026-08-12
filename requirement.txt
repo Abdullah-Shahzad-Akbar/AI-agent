@@ -6,10 +6,8 @@ langchain-tavily
 langgraph
 langchain-core
 typing
-markdown
 chromadb
 pandas
-sqlite3
 fastapi
 pydantic
 dotenv
