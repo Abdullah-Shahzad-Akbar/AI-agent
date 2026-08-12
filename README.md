@@ -60,7 +60,7 @@ Open the project folder in your terminal.
 Run the following command:
 
 ```bash
-uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+uvicorn main:app --host 0.0.0.0 --port 8000 or python -m uvicorn main:app --host 0.0.0.0 --port 8000
 ```
 
 If the server starts successfully, you should see output similar to:
