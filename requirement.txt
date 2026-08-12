@@ -9,6 +9,7 @@ typing
 chromadb
 pandas
 fastapi
+uvicorn
 pydantic
 dotenv
 pymupdf
