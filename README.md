@@ -1,6 +1,6 @@
 # Ai assistant
 
-Abdullah GPT is an AI-powered chatbot built with **FastAPI**, **LangChain**, **LangGraph**, **Groq**, **Google Gemini**, **Ollama**, and **ChromaDB**. It supports conversational AI, document processing (PDF/CSV), image understanding, internet search, and chat history.
+Ai assitant is an AI-powered chatbot built with **FastAPI**, **LangChain**, **LangGraph**, **Groq**, **Google Gemini**, **Ollama**, and **ChromaDB**. It supports conversational AI, document processing (PDF/CSV), image understanding, internet search, and chat history.
 
 ---
 
